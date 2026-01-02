@@ -1,0 +1,28 @@
+Description: CTK Triage documents for Financial crime Triagem documental para crime económico (Office + Financeiro)
+Author: BRC / Gondar
+Version: 1.0
+Id: EconomicCrime_Documents
+RecreateDirectories: true
+
+Targets:
+  -
+    Name: OfficeDocuments
+    Category: Documents
+    Path: OfficeDocumentsUsers.tkape
+
+  -
+    Name: FinancialDocuments
+    Category: Financial
+    Path: FinancialDocumentsUsers.tkape
+
+#--------------------------------------------------------------- 
+#Triage for documents e financial Databases 
+# Searched Extensions:
+# [Documents] .docx, .doc, .pdf, .rtf, .odt, .pages
+# [Calc Sheets] .xlsx, .xls, .xlsb, .csv, .ods
+# [Presentations] .pptx, .ppt, .odp, .key
+# [Databases] .sqlite, .sqlite3, .db, .accdb, .mdb
+# [Financial Docs] .saft, .ofx, .qif, .mt940, .sta
+# [E-mail/Msg] .eml, .msg 
+# [Compacted] .zip
+# -------------------------------------------------------------

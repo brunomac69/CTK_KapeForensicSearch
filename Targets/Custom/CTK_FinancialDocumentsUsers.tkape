@@ -1,0 +1,18 @@
+Description: Financial e Economic crime investigations files / Recolha de ficheiros relevantes para crime financeiro em default(C:\Users)
+Author: BRC /Gondar
+Version: 1.0
+Id: CTK_FinancialDocumentsUsers
+RecreateDirectories: true
+
+Targets:
+  -
+    Name: FinancialDocuments_AllUsers
+    Category: Financial
+    Path: C:\Users
+    Recursive: true
+    FileMask: "*.accdb|*.mdb|*.db|*.sqlite|*.sqlite3|*.ofx|*.qif|*.mt940|*.sta|*.saft|saft*|*.zip|*.7z|*.rar|*.pst|*.ost|*.eml|*.msg"
+    Comment: Documentação financeira, contabilidade, ERP, exportações bancárias, backups e comunicações relevantes, emails não usados, etc
+
+
+# The [path] can be changed to a file server path or other pc locations
+

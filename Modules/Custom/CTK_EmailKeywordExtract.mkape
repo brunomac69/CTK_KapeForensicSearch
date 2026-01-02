@@ -1,0 +1,17 @@
+Description: Exportar PST/OST para pesquisa posterior com CTK_Email_Search
+Category: CTK_EmailSearch
+Author: BRC / Gondar
+Version: 1.1
+Id: CTK_Outlook_Export
+ExportFormat: txt
+FileMask: "*.pst|*.ost"
+
+Processors:
+  -
+    Executable: readpst\readpst.exe
+    CommandLine: -S -r -o "%destinationDirectory%" "%sourceFile%"
+    ExportFormat: txt
+
+# -S: Separa cada email num ficheiro único
+# -o: Define a pasta de saída (criamos uma subpasta Outlook_Export)
+# -r: Mantém a estrutura de pastas original do Outlook

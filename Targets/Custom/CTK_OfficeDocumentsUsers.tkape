@@ -1,0 +1,16 @@
+Description: Financial e Economic crime investigations docs / Recolha de documentos de produtividade (Office e equivalentes) em C:\Users
+Author: BRC / GONDAR
+Version: 1.0
+Id: CTK_OfficeDocumentsUsers
+RecreateDirectories: true
+
+Targets:
+  -
+    Name: OfficeDocuments_AllUsers
+    Category: Documents
+    Path: C:\Users
+    Recursive: true
+    FileMask: "*.doc|*.docx|*.ppt|*.pptx|*.rtf|*.odt|*.odp|*.pages|*.key|*.xls|*.xlsx|*.xlsb|*.csv|*.pdf"
+    Comment: Documentos de produtividade (texto e apresentações) em perfis de utilizador e pastas cloud
+
+# The [path] can be changed to a file server path or other pc locations

@@ -1,0 +1,24 @@
+Description: Search For Office and Financial Docs in Extracted Emails - CTK_search
+Category: CTK_EmailSearch
+Author: BRC / Gondar
+Version: 1.5
+Id: CTK_EmailKeywordSearch
+ExportFormat: csv
+
+Processors:
+  -
+    Executable: ctk_search\ctk_search.exe
+    CommandLine: -d "%destinationDirectory%\..\CTK_EmailSearch" -f "%kapeDirectory%\Keywords\keywords.txt" --deep -o csv -out "%destinationDirectory%\FinancialEmailSearchHits.csv"
+    ExportFormat: csv
+
+# OPTIONS: Use --fast to skip big pdf and DB files (good for triage) OR --deep for full search (long time) 
+# Searched Extensions:
+# [Documents] .docx, .doc, .pdf, .rtf, .odt, .pages
+# [Calc Sheets] .xlsx, .xls, .xlsb, .csv, .ods
+# [Presentations] .pptx, .ppt, .odp, .key
+# [Databases] .sqlite, .sqlite3, .db, .accdb, .mdb
+# [Financial Docs] .saft, .ofx, .qif, .mt940, .sta
+# [E-mail/Msg] .eml, .msg (Já extraidos pelo ReadPST modulo CTK_EmailExtraction)
+# [Compacted] .zip (apenas nomes de ficheiros internos)
+# -------------------------------------------------------------
+# Returns: HASH SHA1 and identify Keyword found.

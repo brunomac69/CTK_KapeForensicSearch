@@ -196,4 +196,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-#depois de venv e requirements gera exe: pyinstaller --onefile --console --clean --name "ctk_search" search.py
+#depois de venv e requirements gera exe: pyinstaller --onefile --console --clean --name "ctk_search" ctk_search.py
